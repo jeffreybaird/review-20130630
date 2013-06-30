@@ -1,0 +1,12 @@
+GEM
+  remote: https://www.rubygems.org/
+  specs:
+    fis-test (0.0.1)
+    sqlite3 (1.3.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  fis-test
+  sqlite3

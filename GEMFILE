@@ -1,3 +1,4 @@
 source 'https://www.rubygems.org'
 
 gem 'fis-test'
+gem 'sqlite3'
