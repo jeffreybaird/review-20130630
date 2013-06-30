@@ -1,4 +1,5 @@
 require 'fis/test'
+require_relative '../lib/artist'
 
 extend Fis::Test
 
