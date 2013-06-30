@@ -1,0 +1,10 @@
+GEM
+  remote: https://www.rubygems.org/
+  specs:
+    fis-test (0.0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  fis-test
