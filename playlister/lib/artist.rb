@@ -10,12 +10,16 @@ class Artist
     @name
   end
 
+  def genres
+    @genres ||= []
+  end
+
   def name=(name)
     @name = name
   end
 
   def songs
-    @songs
+    @songs ||= []
   end
 
   def songs=(songs)
@@ -28,6 +32,8 @@ class Artist
 
   def add_song(song)
     songs << song
+    genres << song.genre
+    song.artist = self
   end
 
   def self.reset_artists
