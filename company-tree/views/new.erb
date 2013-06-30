@@ -1,0 +1,17 @@
+<form action='/new_company' method='POST'>
+  <%2.times do |n|%>
+    <%= n %>
+    Company Name: <%= "<input type='string' name='companies[][company_name]' value='Company #{n}'><br>" %>
+    <% 3.times do |i| %>
+    <h1><%= "Department #{n}" %></h1>
+      <%= "Department: <input type='string' name='companies[][departments][][name]' value='Department #{i}'><br>" %>
+      <%2.times do |j|%>
+        <%= "Employee: <input type='string' name='companies[][departments][][employees][]' value='Employee #{j}'><br>" %>
+      <% end %>
+    <%end%>
+    <br> <br>
+  <% end %>
+
+  <button type='submit'>submit!</button>
+
+</form>

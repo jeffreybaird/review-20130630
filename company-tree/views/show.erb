@@ -1,0 +1,14 @@
+<% @companies.each do |company_hash| %>
+  <h1><%= company_hash[:company_name] %></h1>
+    <%company_hash[:departments].each do |department|%>
+      <h2><%= department[:name]  %></h2>
+      <h3>Employees:</h3>
+      <% department[:employees].each do |employee| %>
+        <ul>
+          <li><%= employee %></li>
+        </ul>
+      <%end%>
+
+    <%end%>
+
+<%end  %>
